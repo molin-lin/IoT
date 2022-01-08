@@ -35,6 +35,10 @@
 	**LINE_CHANNEL_SECRET =
 	**LINE_CHANNEL_ACCESS_TOKEN=
 
+*setup camera for python 
+   >Install command - pip install opencv-python
+
+
 Run Steps
 
 step1: get ngrok token, https://dashboard.ngrok.com/auth
