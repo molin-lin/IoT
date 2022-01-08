@@ -8,6 +8,9 @@
 
 
 *. Setup Flask (網站開方框架函式庫)
+*. setup camera for python 
+   >Install command - pip install opencv-python
+
 
 *. Create web_app.py
 *. python3 web_app.py  
@@ -35,8 +38,6 @@
 	**LINE_CHANNEL_SECRET =
 	**LINE_CHANNEL_ACCESS_TOKEN=
 
-*setup camera for python 
-   >Install command - pip install opencv-python
 
 
 Run Steps
