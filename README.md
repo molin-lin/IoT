@@ -77,7 +77,7 @@ step5: run web_app in command mode,
 
 ## 成果示範
 
-## 改善方向
+## 改善方向與心得
 
 ## 參考資料
 [1]. https://tutorials.webduino.io/zh-tw/docs/socket/sensor/pir.html <br>
