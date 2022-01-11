@@ -1,10 +1,14 @@
-from picamera import PiCamera
-from time import sleep
+import time
+from base_camera import BaseCamera
 
-camera = PiCamera()
 
-#camera.rotation = 180  if image is upside-down
+class Camera(BaseCamera):
+    """An emulated camera implementation that streams a repeated sequence of
+    files 1.jpg, 2.jpg and 3.jpg at a rate of one frame per second."""
+    imgs = [open(f + '.jpg', 'rb').read() for f in ['1', '2', '3']]
 
-camera.start_preview()
-sleep(5)
-camera.stop_preview()
+    @staticmethod
+    def frames():
+        while True:
+            yield Camera.imgs[int(time.time()) % 3]
+            time.sleep(1)

@@ -25,5 +25,4 @@ def chk(x):
             #send pic via LINE
     return flag
 
-
 print(chk(5))
