@@ -19,6 +19,14 @@
    3. PIR接線前要確認三根接腳哪支接腳是接地(GND)，可以把白色遮罩蓋拿起來確認。為了實作過程方便測試，可調整紅外線偵測器的靈敏度(SX)調高, 延遲時間(TX)調低。(順時針方向都是調高)
    4. 
 ## 過程及步驟
+
+### 步驟流程如下圖，前提是樹莓派基本環境已經ready且有python compiler，整個系統架構需要完成的就是.....
+
+  1. 網站的架設(eg.Flask)。
+  2. 樹莓派能夠透通到internet(eg.ngrok)，提供URL 給外面(web/LINE)來連結使用。
+  3. LiNE 機器人(Bot) 的申請與設定
+
+
 *. Setup Flask (網站開方框架函式庫)
 *. setup camera for python 
    >Install command - pip install opencv-python
