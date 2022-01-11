@@ -1,7 +1,7 @@
 # 居家環境遠端管理 - 以樹莓派實作
  
 ## 目的
-  ### 透過樹苺派及Python架構一個原型(prototype)，可以透過Internet(Web/LINE)取得終端設備(eg.鏡頭、感測裝置、電器)之數據或控制。
+   透過樹苺派及Python架構一個原型(prototype)，可以透過Internet(Web/LINE)取得終端設備(eg.鏡頭、感測裝置、電器)之數據或控制。
   
 ## 硬體設備需求
    1. 樹莓派 * 1
