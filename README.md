@@ -37,8 +37,8 @@
 	c. ./ngrok authtoken [token]
 	d. ./ngrok http 5000
 
-*install LINE Bot SDK
-	>pip3 install line-bot-sdk
+*安裝 LINE Bot SDK
+  執行指令：`pip3 install line-bot-sdk`
 
 
 *Setup message API via Line developers,	https://developers.line.biz/console/
@@ -74,4 +74,5 @@ step5: run web_app in command mode,
 ## 參考資料
 [1]. https://tutorials.webduino.io/zh-tw/docs/socket/sensor/pir.html <br>
 [2]. https://ithelp.ithome.com.tw/articles/10229943 <br>
+[3]. https://developers.line.biz/zh-hant/docs/messaging-api/overview/ <br>
 
