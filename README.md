@@ -10,13 +10,12 @@
    4. 紅外線接收模組 * 1
    5. 麵包版/印刷電路板/Led/電阻/杜邦線 (視線路規劃而定)
    6. 簡易焊接設備(若不想把所有線路透過麵包版連接再一起)
-## 軟體需求
+## 軟體及環境需求
    1. VNC viewer
-   2. 
+## 注意事項
 
-## 步驟
-
-
+   1. 為確保系統Python程式除錯過程順利，會先透過電路接線沒有錯誤，且能夠正常運作，
+## 過程及步驟
 *. Setup Flask (網站開方框架函式庫)
 *. setup camera for python 
    >Install command - pip install opencv-python
