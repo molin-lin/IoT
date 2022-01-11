@@ -16,7 +16,7 @@
 
    1. 為確保系統Python程式除錯過程順利，會先完成電路接線，並透過簡易程式確認GPIO 各項接點控制led，方便確認能夠正常運作，才進行Python 程式撰寫。
    2. 鏡頭及紅外線體感偵測器(PIR)怕靜電，接線過程中要確定完成去除靜電。
-   3. PIR接線前要確認三根接腳哪一邊是接地，可以把白色遮罩蓋拿起來確認，若需要調整偵測靈敏度(SX)或延遲時間(TX)，可以同時處理。
+   3. PIR接線前要確認三根接腳哪一邊是接地，可以把白色遮罩蓋拿起來確認，也可以順便調整紅外線偵測器的靈敏度(SX)或延遲時間(TX)，一開始建議可以把靈敏度調高, 延遲時間調低以便測試。
    4. 
 ## 過程及步驟
 *. Setup Flask (網站開方框架函式庫)
@@ -72,6 +72,5 @@ step5: run web_app in command mode,
 ## 改善方向
 
 ## 參考資料
-[1]. https://tutorials.webduino.io/zh-tw/docs/socket/sensor/pir.html
-
+[1]. https://tutorials.webduino.io/zh-tw/docs/socket/sensor/pir.html <br>
 [2]. 
