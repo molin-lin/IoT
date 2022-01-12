@@ -36,7 +36,26 @@
   | GIPO Pin number| Description      |GIPO Pin number| Description               |
   | ------------- | ----------------- |  ------------- | ------------------------- | 
   | `3V3 power`   |      NIL    | `5V power`      | **Used for 7 segments display**  |
-  | `GPIO 2`   | **Used for LED**     | `5V power`   | NIL     |
+  | `GPIO 2 (1)`   | **Used for LED**     | `5V power`   | NIL     |
+  | `GPIO 3`   | **Used for LED**     | `5V power`   | NIL     |
+  | `GPIO 4`   | **Used for LED**     | `5V power`   | NIL     |
+  | `GND`      | **Used for LED**     | `5V power`   | NIL     |
+  | `GPIO 2`   | **Used for LED**     | `5V power`   | NIL     |
+  | `GPIO 2`   | **Used for LED**     | `5V power`   | NIL     |
+  | `GPIO 2`   | **Used for LED**     | `5V power`   | NIL     |
+  | `GPIO 2`   | **Used for LED**     | `5V power`   | NIL     |
+  | `GPIO 2`   | **Used for LED**     | `5V power`   | NIL     |
+  | `GPIO 2`   | **Used for LED**     | `5V power`   | NIL     |
+  | `GPIO 2`   | **Used for LED**     | `5V power`   | NIL     |
+  | `GPIO 2`   | **Used for LED**     | `5V power`   | NIL     |
+  | `GPIO 2`   | **Used for LED**     | `5V power`   | NIL     |
+  | `GPIO 2`   | **Used for LED**     | `5V power`   | NIL     |
+  | `GPIO 2`   | **Used for LED**     | `5V power`   | NIL     |
+  | `GPIO 2`   | **Used for LED**     | `5V power`   | NIL     |
+  | `GPIO 2`   | **Used for LED**     | `5V power`   | NIL     |
+  | `GPIO 2`   | **Used for LED**     | `5V power`   | NIL     |
+  | `GPIO 2`   | **Used for LED**     | `5V power`   | NIL     |
+  
 
 #### 系統開發建置。
   + 系統開發個人的習慣是從單一功能function開始,利用簡單的python程式進行電路控制測試，沒有問題後再整合一起。本實作分成如下幾個部分。
