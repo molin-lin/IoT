@@ -2,10 +2,23 @@
 #and create some codes with remarks behind.
 
 #!/usr/bin/env python
+
+import os, sys
 from importlib import import_module
-import os
-from flask import Flask, render_template, Response
+from __future__ import unicode_literals
+from flask import Flask, render_template, Response, request, abort
 from controllor import control
+from linebot import LineBotApi, WebhookHandler
+from linebot.exceptions import InvalidSignatureError
+from linebot.models import MessageEvent, TextMessage, TextSendMessage
+import configparser
+
+# LINE 聊天機器人的基本資料
+config = configparser.ConfigParser()
+config.read('config.ini')
+
+line_bot_api = LineBotApi(config.get('line-bot', 'channel_access_token'))
+handler = WebhookHandler(config.get('line-bot', 'channel_secret'))
 
 # import camera driver
 if os.environ.get('CAMERA'):
@@ -17,6 +30,7 @@ else:
 from camera_pi import Camera
 
 app = Flask(__name__)
+
 
 
 @app.route('/')
@@ -32,6 +46,38 @@ def gen(camera):
         frame = camera.get_frame()
         yield b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n--frame\r\n'
 
+
+
+# 接收 LINE 的資訊
+@app.route("/callback", methods=['POST'])
+def callback():
+    signature = request.headers['X-Line-Signature']
+
+    body = request.get_data(as_text=True)
+    app.logger.info("Request body: " + body)
+    
+    try:
+        print(body, signature)
+        handler.handle(body, signature)
+        
+    except InvalidSignatureError:
+        abort(400)
+
+    return 'OK'
+
+# 回覆 LINE 的訊息
+@handler.add(MessageEvent, message=TextMessage)
+def reply_to_line(event):
+    
+    # functions control
+    reply_text = ''
+    reply_text += event.message.text
+    reply_text += " has done!"
+    
+    line_bot_api.reply_message(
+        event.reply_token,
+        TextSendMessage(text=reply_text)
+    )
 
 @app.route('/video_feed')
 def video_feed():
