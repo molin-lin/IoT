@@ -71,7 +71,7 @@
 
 *安裝 LINE Bot SDK
   執行指令：`pip3 install line-bot-sdk`
-
+![LINE](https://www.flickr.com/photos/194854339@N08/shares/ZyM56N "LINE")
 
 *Setup message API via Line developers,	https://developers.line.biz/console/
 
