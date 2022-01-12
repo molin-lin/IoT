@@ -100,6 +100,7 @@ step5: run web_app in command mode,
 ## 參考資料
 [1]. https://tutorials.webduino.io/zh-tw/docs/socket/sensor/pir.html <br>
 [2]. https://ithelp.ithome.com.tw/articles/10229943 <br>
-[3]. https://developers.line.biz/zh-hant/docs/messaging-api/overview/ <br>
-[4]. https://ithelp.ithome.com.tw/articles/10238029 <br>
+[3]. https://www.learncodewithmike.com/2020/06/python-line-bot.html <
+[4]. https://developers.line.biz/zh-hant/docs/messaging-api/overview/ <br>
+[5]. https://ithelp.ithome.com.tw/articles/10238029 <br>
 
