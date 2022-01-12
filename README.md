@@ -29,8 +29,9 @@
 #### 終端硬體設備及電路
   + 電路圖如下。
   
+	![GPIO.jpg](https://github.com/molin-lin/Image/blob/main/GPIO.jpg "GPIO.jpg")
   
-  + [GPIO](https://www.raspberrypi.com/documentation/computers/os.html)其各[針腳接線](https://pinout.xyz/)與相關感測模組對應如下。
+  + [GPIO.jpg](https://www.raspberrypi.com/documentation/computers/os.html)其各[針腳接線](https://pinout.xyz/)與相關感測模組對應如下。
 
   | GIPO Pin number| Description      |GIPO Pin number| Description               |
   | ------------- | ----------------- |  ------------- | ------------------------- | 
