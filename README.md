@@ -28,7 +28,10 @@
 
 #### 終端硬體設備及電路
   + 電路圖如下。
-  + GPIO針腳接線與相關感測模組對應如下。
+  
+  ![(https://ap-east-1-02820030-view.menlosecurity.com/c/i/aHR0cHM6Ly93d3cuY2hpcHdheWdvLmNvbS9kb2MvaW1hZ2VzL2dwaW9fcGluLzAyLnBuZz9fdj0xNjE0OTM0Nzk2) ""]
+  
+  + [GPIO](https://www.raspberrypi.com/documentation/computers/os.html)針腳接線與相關感測模組對應如下。
 
   | GIPO Pin number| Description      |GIPO Pin number| Description               |
   | ------------- | ----------------- |  ------------- | ------------------------- | 
