@@ -5,8 +5,8 @@
   
 ## 硬體設備需求
    1. 樹莓派 * 1
-   2. NOIR 鏡頭 * 1
-   3. DHT22 溫溼度感測模組 * 1
+   2. [NOIR 鏡頭](https://safe.menlosecurity.com/https://www.uctronics.com/raspberry-pi-noir-camera-board-w-cs-mount-lens-compatible-with-official-module.html) * 1
+   3. [DHT22](https://www.raspberrypi.com.tw/23140/dht22-temperature-and-humidity-sensor/) 溫溼度感測模組 * 1
    4. 七段顯示器 * 1 (純為測試與噱頭用，可有可無)
    5. 紅外線接收模組 * 1
    6. 麵包版/印刷電路板/Led/電阻/杜邦線 (視線路規劃而定)
