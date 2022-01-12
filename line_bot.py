@@ -1,27 +1,51 @@
-# this pyhon codes referenced from https://ithelp.ithome.com.tw/articles/10229943
+#These codes as below is clone from https://github.com/miguelgrinberg/flask-video-streaming
+#and create some codes with remarks behind.
 
-from __future__ import unicode_literals
+#!/usr/bin/env python
+
 import os, sys
-from flask import Flask, request, abort
+from importlib import import_module
+from __future__ import unicode_literals
+from flask import Flask, render_template, Response, request, abort
+from controllor import control
 from linebot import LineBotApi, WebhookHandler
 from linebot.exceptions import InvalidSignatureError
 from linebot.models import MessageEvent, TextMessage, TextSendMessage
 import configparser
 
-app = Flask(__name__)
-
 # LINE 聊天機器人的基本資料
 config = configparser.ConfigParser()
 config.read('config.ini')
 
-#channel_secret = os.getenv('LINE_CHANNEL_SECRET', None)
-#channel_access_token = os.getenv('LINE_CHANNEL_ACCESS_TOKEN', None)
-
-# authenticate
 line_bot_api = LineBotApi(config.get('line-bot', 'channel_access_token'))
 handler = WebhookHandler(config.get('line-bot', 'channel_secret'))
-#line_bot_api = LineBotApi(channel_access_token)
-#handler = WebhookHandler(channel_secret)
+
+# import camera driver
+if os.environ.get('CAMERA'):
+    Camera = import_module('camera_' + os.environ['CAMERA']).Camera
+else:
+    from camera import Camera
+
+# Raspberry Pi camera module (requires picamera package)
+from camera_pi import Camera
+
+app = Flask(__name__)
+
+
+
+@app.route('/')
+def index():
+    """Video streaming home page."""
+    return render_template('index.html')
+
+
+def gen(camera):
+    """Video streaming generator function."""
+    yield b'--frame\r\n'
+    while True:
+        frame = camera.get_frame()
+        yield b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n--frame\r\n'
+
 
 
 # 接收 LINE 的資訊
@@ -41,12 +65,11 @@ def callback():
 
     return 'OK'
 
-# response message
+# 回覆 LINE 的訊息
 @handler.add(MessageEvent, message=TextMessage)
 def reply_to_line(event):
     
     # functions control
-        
     reply_text = ''
     reply_text += event.message.text
     reply_text += " has done!"
@@ -56,5 +79,24 @@ def reply_to_line(event):
         TextSendMessage(text=reply_text)
     )
 
-if __name__ == "__main__":
-    app.run()
+@app.route('/video_feed')
+def video_feed():
+    """Video streaming route. Put this in the src attribute of an img tag."""
+    return Response(gen(Camera()),
+                    mimetype='multipart/x-mixed-replace; boundary=frame')
+
+
+@app.route('/<string:functionID>')  #Create to sumulate the controlor via GPIO, 2022/1/9, Molin
+def cntl(functionID):
+    message = control(functionID)
+    if message=="on":
+        return render_template('set_on.html')
+    elif message=="off":
+        return render_template('set_off.html')
+    elif message=="video":
+        return render_template('video.html')
+    else:
+        return message
+        
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', threaded=True)
