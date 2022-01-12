@@ -36,22 +36,22 @@
   | GIPO Pin number| Description      |GIPO Pin number| Description               |
   | ------------- | ----------------- |  ------------- | ------------------------- | 
   | `3V3 power`   |      NIL    | `5V power`      | **Used for 7 segments display**  |
-  | `GPIO 2 (1)`   | **Used for LED**     | `5V power`   | NIL     |
-  | `GPIO 3`   | **Used for LED**     | `5V power`   | NIL     |
-  | `GPIO 4`   | **Used for LED**     | `5V power`   | NIL     |
-  | `GND`      | **Used for LED**     | `5V power`   | NIL     |
-  | `GPIO 2`   | **Used for LED**     | `5V power`   | NIL     |
-  | `GPIO 2`   | **Used for LED**     | `5V power`   | NIL     |
-  | `GPIO 2`   | **Used for LED**     | `5V power`   | NIL     |
-  | `GPIO 2`   | **Used for LED**     | `5V power`   | NIL     |
-  | `GPIO 2`   | **Used for LED**     | `5V power`   | NIL     |
-  | `GPIO 2`   | **Used for LED**     | `5V power`   | NIL     |
-  | `GPIO 2`   | **Used for LED**     | `5V power`   | NIL     |
-  | `GPIO 2`   | **Used for LED**     | `5V power`   | NIL     |
-  | `GPIO 2`   | **Used for LED**     | `5V power`   | NIL     |
-  | `GPIO 2`   | **Used for LED**     | `5V power`   | NIL     |
-  | `GPIO 2`   | **Used for LED**     | `5V power`   | NIL     |
-  | `GPIO 2`   | **Used for LED**     | `5V power`   | NIL     |
+  | `GPIO 2 (01)`   | **Used for LED**     | `5V power`   | NIL     |
+  | `GPIO 3 (03)`   | **Used for LED**     | `5V power`   | NIL     |
+  | `GPIO 4 (05)`   | **Used for LED**     | `5V power`   | NIL     |
+  | `GND    (09)`      | **Used for LED**     | `5V power`   | NIL     |
+  | `GPIO 17 (11)`   | **Used for LED**     | `5V power`   | NIL     |
+  | `GPIO 27`   | **Used for LED**     | `5V power`   | NIL     |
+  | `GPIO 22`   | **Used for LED**     | `5V power`   | NIL     |
+  | `3.3V`   | **Used for LED**     | `5V power`   | NIL     |
+  | `GPIO 10`   | **Used for LED**     | `5V power`   | NIL     |
+  | `GPIO 9`   | **Used for LED**     | `5V power`   | NIL     |
+  | `GPIO 11`   | **Used for LED**     | `5V power`   | NIL     |
+  | `GND    (25)`   | **Used for LED**     | `5V power`   | NIL     |
+  | `GPIO 5`   | **Used for LED**     | `5V power`   | NIL     |
+  | `GPIO 6`   | **Used for LED**     | `5V power`   | NIL     |
+  | `GPIO 13`   | **Used for LED**     | `5V power`   | NIL     |
+  | `GPIO 19`   | **Used for LED**     | `5V power`   | NIL     |
   | `GPIO 2`   | **Used for LED**     | `5V power`   | NIL     |
   | `GPIO 2`   | **Used for LED**     | `5V power`   | NIL     |
   | `GPIO 2`   | **Used for LED**     | `5V power`   | NIL     |
@@ -61,10 +61,11 @@
   + 系統開發個人的習慣是從單一功能function開始,利用簡單的python程式進行電路控制測試，沒有問題後再整合一起。本實作分成如下幾個部分。
   	+ 紅外線PIR功能及單元測試
   	+ 溫溼度感測功能及單元測試
+            + 安裝python 套件
+              執行指令 `sudo pip3 install Adafruit_DHT`
   	+ 鏡頭模組功能及單元測試
   	    + 安裝python套件
   	      執行指令: `pip install opencv-python`
-  	    +
   	+ Web 網頁 (Flask)開發及測試
   	+ Ngrok 功能建置及單元測試
   	+ LINE Bot 功能
