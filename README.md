@@ -124,9 +124,9 @@ step5: run web_app in command mode,
 ## 改善方向與心得
 
 ## 參考資料
-[1]. https://tutorials.webduino.io/zh-tw/docs/socket/sensor/pir.html <br>
-[2]. https://ithelp.ithome.com.tw/articles/10229943 <br>
-[3]. https://www.learncodewithmike.com/2020/06/python-line-bot.html <
-[4]. https://developers.line.biz/zh-hant/docs/messaging-api/overview/ <br>
+[1]. [人體紅外線偵測](https://tutorials.webduino.io/zh-tw/docs/socket/sensor/pir.html "人體紅外線偵測") <br>
+[2]. [教你如何使用Python成功串接Linebot(2020版)](https://ithelp.ithome.com.tw/articles/10229943"教你如何使用Python成功串接Linebot(2020版)") <br>
+[3]. [Python+LINE Bot教學 6步驟快速上手LINE Bot機器人](https://www.learncodewithmike.com/2020/06/python-line-bot.html "Python+LINE Bot教學 6步驟快速上手LINE Bot機器人") <br>
+[4]. [Messaging API 介紹](https://developers.line.biz/zh-hant/docs/messaging-api/overview/ "Messaging API 介紹") <br>
 [5]. https://ithelp.ithome.com.tw/articles/10238029 <br>
 
