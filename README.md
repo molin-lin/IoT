@@ -7,11 +7,11 @@
    1. 樹莓派 * 1
    2. [NOIR 鏡頭](https://safe.menlosecurity.com/https://www.uctronics.com/raspberry-pi-noir-camera-board-w-cs-mount-lens-compatible-with-official-module.html) * 1
    3. [DHT22](https://www.raspberrypi.com.tw/23140/dht22-temperature-and-humidity-sensor/) 溫溼度感測模組 * 1
-   4. 七段顯示器 * 1 (純為測試與噱頭用，可有可無)
-   5. [紅外線接收模組](https://maker.pro/raspberry-pi/tutorial/how-to-interface-a-pir-motion-sensor-with-raspberry-pi-gpio) * 1
-   6. 麵包版/印刷電路板/Led/電阻/杜邦線 (視線路規劃而定)
-   7. 簡易焊接設備(若不想把所有線路透過麵包版連接再一起)
-   8. 紙箱或薄木板(固定相關設備，方便移動及避免電路鬆脫)
+   4. [紅外線接收模組](https://maker.pro/raspberry-pi/tutorial/how-to-interface-a-pir-motion-sensor-with-raspberry-pi-gpio) * 1
+   5. 麵包版/印刷電路板/Led/電阻/杜邦線 (視線路規劃而定)
+   6. 簡易焊接設備(若不想把所有線路透過麵包版連接再一起)
+   7. 七段顯示器 * 1 (純為測試與噱頭用，可有可無)
+   8. 紙箱或薄木板(固定相關設備，方便移動及避免電路鬆脫)   9. 
 ## 軟體及環境需求
    1. VNC viewer
 ## 注意事項
