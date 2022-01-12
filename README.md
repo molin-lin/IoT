@@ -128,5 +128,6 @@ step5: run web_app in command mode,
 [2]. [教你如何使用Python成功串接Linebot(2020版)](https://ithelp.ithome.com.tw/articles/10229943"教你如何使用Python成功串接Linebot(2020版)") <br>
 [3]. [Python+LINE Bot教學 6步驟快速上手LINE Bot機器人](https://www.learncodewithmike.com/2020/06/python-line-bot.html "Python+LINE Bot教學 6步驟快速上手LINE Bot機器人") <br>
 [4]. [Messaging API 介紹](https://developers.line.biz/zh-hant/docs/messaging-api/overview/ "Messaging API 介紹") <br>
-[5]. https://ithelp.ithome.com.tw/articles/10238029 <br>
+[5]. [樹莓派連接DHT22偵測溫濕度](https://ithelp.ithome.com.tw/articles/10238029 "樹莓派連接DHT22偵測溫濕度")<br>
+[6].
 
