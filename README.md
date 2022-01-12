@@ -62,12 +62,16 @@
   	+ 紅外線PIR功能及單元測試
   	+ 溫溼度感測功能及單元測試
   	+ 鏡頭模組功能及單元測試
+  	    + 安裝python套件
+  	      執行指令: `pip install opencv-python`
+  	    +
   	+ Web 網頁 (Flask)開發及測試
   	+ Ngrok 功能建置及單元測試
   	+ LINE Bot 功能
-  + 網站的架設(本實作是透過 [Flask](https://flask.palletsprojects.com/en/2.0.x/))。
-  + 樹莓派能夠透通到internet(本實作是採用[ngrok](https://ithelp.ithome.com.tw/articles/10197345))，提供URL 給外面(web/LINE)來連結使用。
-  + LiNE 機器人(Bot) 的申請與設定可透過 [LINE Developers](https://developers.line.biz/zh-hant/docs/messaging-api/getting-started/)依步驟完成。
+  + 有關 flask、ngrok、LINE Developers 相關安裝細節可參考如下連結內容進行。
+  	+ 網站的架設(本實作是透過 [Flask](https://flask.palletsprojects.com/en/2.0.x/))。
+  	+ 樹莓派能夠透通到internet(本實作是採用[ngrok](https://ithelp.ithome.com.tw/articles/10197345))，提供URL 給外面(web/LINE)來連結使用。
+  	+ LiNE 機器人(Bot) 的申請與設定可透過 [LINE Developers](https://developers.line.biz/zh-hant/docs/messaging-api/getting-started/)依步驟完成。
 
 
 *. 安裝 Flask (網站開方框架函式庫)
