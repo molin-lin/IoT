@@ -38,10 +38,16 @@
   | `GPIO 2`   | **Used for LED**     | `5V power`   | NIL     |
 
 #### 系統開發建置。
-  + 1. 系統開發我的習慣是從單一功能function開始,利用簡單的python程式進行電路控制測試，沒有問題後再整合一起。本實作分成如下幾個部分。
-  + 2. 網站的架設(本實作是透過 [Flask](https://flask.palletsprojects.com/en/2.0.x/))。
-  + 3. 樹莓派能夠透通到internet(本實作是採用[ngrok](https://ithelp.ithome.com.tw/articles/10197345))，提供URL 給外面(web/LINE)來連結使用。
-  + 4. LiNE 機器人(Bot) 的申請與設定可透過 [LINE Developers](https://developers.line.biz/zh-hant/docs/messaging-api/getting-started/)依步驟完成。
+  + 系統開發個人的習慣是從單一功能function開始,利用簡單的python程式進行電路控制測試，沒有問題後再整合一起。本實作分成如下幾個部分。
+  	+ 紅外線PIR功能及單元測試
+  	+ 溫溼度感測功能及單元測試
+  	+ 鏡頭模組功能及單元測試
+  	+ Web 網頁 (Flask)開發及測試
+  	+ Ngrok 功能建置及單元測試
+  	+ LINE Bot 功能
+  + 網站的架設(本實作是透過 [Flask](https://flask.palletsprojects.com/en/2.0.x/))。
+  + 樹莓派能夠透通到internet(本實作是採用[ngrok](https://ithelp.ithome.com.tw/articles/10197345))，提供URL 給外面(web/LINE)來連結使用。
+  + LiNE 機器人(Bot) 的申請與設定可透過 [LINE Developers](https://developers.line.biz/zh-hant/docs/messaging-api/getting-started/)依步驟完成。
 
 
 *. 安裝 Flask (網站開方框架函式庫)
