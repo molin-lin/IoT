@@ -24,11 +24,11 @@
    5. 
 ## 過程及步驟
 
-### 步驟流程如下圖，前提是樹莓派基本環境已經ready且有python compiler，整個系統架構需要完成的就是.....
+### 系統架構如下圖，此實作前提是樹莓派已經完成基本環境設定，接下來要完成的如下步驟:
 
-  1. 網站的架設(eg.Flask)。
-  2. 樹莓派能夠透通到internet(eg.ngrok)，提供URL 給外面(web/LINE)來連結使用。
-  3. LiNE 機器人(Bot) 的申請與設定
+  1. 網站的架設(本實作是透過 [Flask](https://flask.palletsprojects.com/en/2.0.x/))。
+  2. 樹莓派能夠透通到internet(本實作是採用[ngrok](https://ithelp.ithome.com.tw/articles/10197345))，提供URL 給外面(web/LINE)來連結使用。
+  3. LiNE 機器人(Bot) 的申請與設定可透過 [LINE Developers](https://developers.line.biz/zh-hant/docs/messaging-api/getting-started/)依步驟完成。
 
 
 *. Setup Flask (網站開方框架函式庫)
