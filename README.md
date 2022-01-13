@@ -35,26 +35,26 @@
 
   | GIPO Pin number| Description      |GIPO Pin number| Description               |
   | ------------- | ----------------- |  ------------- | ------------------------- | 
-  | `3V3 power`   |      NIL    | `5V power`      | **Used for 7 segments display**  |
-  | `GPIO 2 (01)`   | **Used for LED**     | `5V power`   | NIL     |
-  | `GPIO 3 (03)`   | **Used for LED**     | `5V power`   | NIL     |
-  | `GPIO 4 (05)`   | **Used for LED**     | `5V power`   | NIL     |
-  | `GND    (09)`      | **Used for LED**     | `5V power`   | NIL     |
-  | `GPIO 17 (11)`   | **Used for LED**     | `5V power`   | NIL     |
-  | `GPIO 27`   | **Used for LED**     | `5V power`   | NIL     |
-  | `GPIO 22`   | **Used for LED**     | `5V power`   | NIL     |
-  | `3.3V`   | **Used for LED**     | `5V power`   | NIL     |
-  | `GPIO 10`   | **Used for LED**     | `5V power`   | NIL     |
-  | `GPIO 9`   | **Used for LED**     | `5V power`   | NIL     |
-  | `GPIO 11`   | **Used for LED**     | `5V power`   | NIL     |
-  | `GND    (25)`   | **Used for LED**     | `5V power`   | NIL     |
-  | `GPIO 5`   | **Used for LED**     | `5V power`   | NIL     |
-  | `GPIO 6`   | **Used for LED**     | `5V power`   | NIL     |
-  | `GPIO 13`   | **Used for LED**     | `5V power`   | NIL     |
-  | `GPIO 19`   | **Used for LED**     | `5V power`   | NIL     |
-  | `GPIO 2`   | **Used for LED**     | `5V power`   | NIL     |
-  | `GPIO 2`   | **Used for LED**     | `5V power`   | NIL     |
-  | `GPIO 2`   | **Used for LED**     | `5V power`   | NIL     |
+  | `3V3 power`   |   **DHT22 PWR**    | `5V power`      | **Used for 7 segments display**  |
+  | `GPIO 2 (01)`   | **LED (PIR)**     | `5V power`   | NIL     |
+  | `GPIO 3 (03)`   | **DHT22 Data INPT**     | `5V power`   | NIL     |
+  | `GPIO 4 (05)`   | **PIR DATA INPT**     | `5V power`   | NIL    |
+  | `GND    (09)`      | NIL     | `5V power`   | NIL    |
+  | `GPIO 17 (11)`   | NIL     | `5V power`   | NIL     |
+  | `GPIO 27 (13)`   | NIL     | `5V power`   | NIL     |
+  | `GPIO 22 (15)`   | NIL     | `5V power`   | NIL     |
+  | `3.3V (17)`   | NIL     | `5V power`   | NIL     |
+  | `GPIO 10 (19)`   | NIL     | `5V power`   | NIL     |
+  | `GPIO 9 (21)`   | NIL     | `5V power`   | NIL     |
+  | `GPIO 11 (23)`   | NIL     | `5V power`   | NIL     |
+  | `GND    (25)`   | NIL     | `5V power`   | NIL     |
+  | `GPIO 0 (27)`   | NIL     | `5V power`   | NIL     |
+  | `GPIO 5 (29)`   | NIL     | `5V power`   | NIL     |
+  | `GPIO 6 (31)`   | NIL     | `5V power`   | NIL     |
+  | `GPIO 13 (33)`   | NIL     | `5V power`   | NIL     |
+  | `GPIO 19 (35)`   | NIL     | `5V power`   | NIL     |
+  | `GPIO 26 (37)`   | NIL     | `5V power`   | NIL     |
+  | `GND (39)`   | **GND for ALL devices**  | `5V power`   | NIL     |
   
 
 #### 系統開發建置。
