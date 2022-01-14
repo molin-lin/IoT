@@ -21,7 +21,7 @@
    2. 實作過程中，為了測試除錯，在樹莓派上面插拔一堆線路接是件很不方便的事，購過40pins排線轉接到麵包版上的T-Cobbler 可以改善工作效率。
    3. 鏡頭及紅外線體感偵測器(PIR)怕靜電，接線過程中要確定完成去除靜電。
    4. PIR接線前要確認三根接腳哪支接腳是接地(GND)，可以把白色遮罩蓋拿起來確認。為了實作過程方便測試，可調整紅外線偵測器的靈敏度(SX)調高, 延遲時間(TX)調低。(順時針方向都是調高)
-   5. 
+   
 ## 過程及步驟
 
 ### 系統架構如下圖，此實作前提是樹莓派已經完成基本環境設定，接下來要完成的主要步驟如下:
@@ -99,7 +99,8 @@
   	    + 想要透過 LNIE Bot跟樹莓派進行溝通，要先註冊LINE 官方帳號(目前免費)取得Provider，並建立Channel，才能開始設定並使用Message API。詳細步驟過程可參閱下一段的連結。
   	    + 這過程中需要紀錄幾個資料，是之後程式開發過程中會需要使用到的，當然可以透過 [LINE Developers Console](https://developers.line.biz/zh-hant/docs/messaging-api/getting-started/) 進行設定與取得相關資料。
                 + Channel secret
-                + Chnnel access token
+                + Channel access token
+                + 並於 Channel 設定頁面中，將「自動回應訊息」停用，並啟用「Webhook」。
                 + 設定 Webhook URL，這項設定可從 ngrok 啟動後的畫面取得URL 後再來設定， 讓LINE platform 知道要連結到哪裡，並取得對應的response對應的response。
 
 
@@ -108,37 +109,12 @@
   	+ 樹莓派能夠透通到internet([使用 ngrok 讓外網連接你的 API](https://ithelp.ithome.com.tw/articles/10197345))，提供URL 給外面(web/LINE)來連結使用。
   	+ LiNE 機器人(Bot) 的申請與設定可透過 [LINE Developers](https://developers.line.biz/zh-hant/docs/messaging-api/getting-started/)依步驟完成。
 
+#### 執行啟用
 
-
-*安裝 LINE Bot SDK
-  執行指令：`pip3 install line-bot-sdk`
-![LINE](https://www.flickr.com/photos/194854339@N08/shares/ZyM56N "LINE")
-
-*Setup message API via Line developers,	https://developers.line.biz/console/
-
-*setup environment paramenters
-	export LINE_CHANNEL_SECRET=
-	export LINE_CHANNEL_ACCESS_TOKEN=
-
-	**LINE_CHANNEL_SECRET =
-	**LINE_CHANNEL_ACCESS_TOKEN=
-
-
-
-Run Steps
-
-step1: get ngrok token, https://dashboard.ngrok.com/auth
-step2: start terminal, ./ngrok authtoken[token]
-step3: build the channel, 
-	>./ngrok http [port] , port=5000 in this pratice.
-	We can get the forwarding URL from the response message.
-	
-step4: setup Web Server using Python, and the port must be the same with ngrok, 
-	>python -m SimpleHTTPServer [port] , port=5000 in this pratice.
-
-step5: run web_app in command mode, 
-	>python3 web_app.py  
-
+   + 如果開發過程中環頸經取得 ngrok token 並開啟終端機授權 `./ngrok authtoken[token]`，可直接下一步驟。
+   + 建立 Chanel  `./ngrok http 5000` ，並取得URL (複製下來)
+   + 透過Python 建立 Web Server (Port 必須跟  ngrok 一致)。 `python -m SimpleHTTPServer 5000`
+   + 啟動 Web 程式。 `python3 practice_app.py`   (本實作的web server入口程式為 practice_app.py)
 
 ## 成果示範(影片長度 8分59秒)
 
