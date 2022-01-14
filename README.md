@@ -141,7 +141,7 @@ alt="成果示範影片" width="240" height="180" border="10" /></a>
    + 實作的鏡頭為固定不動，可結合步進馬達(PWM)來控制鏡頭方向，拍攝不同角度畫面。
    + 遠端操作環境 透過社群媒體 LINE Bot 遠比 Web 來得便利， 受限Message API目前只停留在訊息文字回覆，應可結合圖片或影音 API 增加實用性與有趣性。
    + 結合Google API 可以文字轉為語音，輸入之文字可透過樹莓派結合喇叭達到此目的。
-   + 最終是傳送圖片至 LINE Bot，進行影像辨識後回覆結果。
+   + 本實作目前可透過紅外線有感應時，透過鏡頭取得當時的影像紀錄，其最終是傳送圖片至 LINE Bot，進行影像辨識後回覆結果。
    
    ***心得:***
    + 透過樹莓派進入IoT 的世界門檻不高，市面可找到很多終端套件來連接使用，端看自己想要達到甚麼樣的資料蒐集或遠端控制。而網路上也有很多前人寶貴經驗與程式撰寫分享，都是可以嘗試看看。
@@ -154,5 +154,6 @@ alt="成果示範影片" width="240" height="180" border="10" /></a>
 [3]. [Python+LINE Bot教學 6步驟快速上手LINE Bot機器人](https://www.learncodewithmike.com/2020/06/python-line-bot.html "Python+LINE Bot教學 6步驟快速上手LINE Bot機器人") <br>
 [4]. [Messaging API 介紹](https://developers.line.biz/zh-hant/docs/messaging-api/overview/ "Messaging API 介紹") <br>
 [5]. [樹莓派連接DHT22偵測溫濕度](https://ithelp.ithome.com.tw/articles/10238029 "樹莓派連接DHT22偵測溫濕度")<br>
-[6]. [API-picamera.camera Module](https://github.com/amymcgovern/pyparrot/issues/34#issuecomment-379557137) <br>
+[6]. [鏡頭套件問題](https://github.com/amymcgovern/pyparrot/issues/34#issuecomment-379557137) <br>
+[7]. [API-picamera.camera Module](https://picamera.readthedocs.io/en/release-1.10/api_camera.html)
 
