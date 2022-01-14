@@ -116,7 +116,7 @@
 
   + 軟硬體環境建置差不多時，就可以將各小功能的程式碼整合在一起，本實作相關程式碼放置於[python_code](https://github.com/molin-lin/IoT/tree/main/python_code) 資料夾內。
 #### 成品外觀
- ![IoT.jpg](https://github.com/molin-lin/Image/blob/main/IoT.jpg "IoT.jpg" )
+ ![IoT.png](https://github.com/molin-lin/Image/blob/main/IoT.jpg "IoT.png" )
 	
 #### 執行啟用
 
