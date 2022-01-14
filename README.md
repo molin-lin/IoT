@@ -115,7 +115,9 @@
   	+ LiNE 機器人(Bot) 的申請與設定可透過 [LINE Developers](https://developers.line.biz/zh-hant/docs/messaging-api/getting-started/)依步驟完成。
 
   + 軟硬體環境建置差不多時，就可以將各小功能的程式碼整合在一起，本實作相關程式碼放置於[python_code](https://github.com/molin-lin/IoT/tree/main/python_code) 資料夾內。
-  
+#### 成品外觀
+ ![IoT.jpg](https://github.com/molin-lin/Image/blob/main/IoT.jpg "IoT.jpg" )
+	
 #### 執行啟用
 
    + 可透過以下QR Code 加入 LINE 機器人。
