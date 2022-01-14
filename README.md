@@ -140,15 +140,16 @@ step5: run web_app in command mode,
 	>python3 web_app.py  
 
 
-## 成果示範
-
-1_ekMo24dV4
+## 成果示範(影片長度 8分59秒)
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=1_ekMo24dV4
 " target="_blank"><img src="http://img.youtube.com/vi/1_ekMo24dV4/0.jpg" 
 alt="成果示範影片" width="240" height="180" border="10" /></a>
 
 ## 改善方向與心得
+   **本實作可改善方向:f**
+   + 實作的鏡頭為固定不動，可結合步進馬達(PWM)來控制鏡頭方向，拍攝不同角度畫面。
+   + 
 
 ## 參考資料
 [1]. [人體紅外線偵測](https://tutorials.webduino.io/zh-tw/docs/socket/sensor/pir.html "人體紅外線偵測") <br>
@@ -156,5 +157,4 @@ alt="成果示範影片" width="240" height="180" border="10" /></a>
 [3]. [Python+LINE Bot教學 6步驟快速上手LINE Bot機器人](https://www.learncodewithmike.com/2020/06/python-line-bot.html "Python+LINE Bot教學 6步驟快速上手LINE Bot機器人") <br>
 [4]. [Messaging API 介紹](https://developers.line.biz/zh-hant/docs/messaging-api/overview/ "Messaging API 介紹") <br>
 [5]. [樹莓派連接DHT22偵測溫濕度](https://ithelp.ithome.com.tw/articles/10238029 "樹莓派連接DHT22偵測溫濕度")<br>
-[6].
 
