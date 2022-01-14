@@ -111,6 +111,10 @@
 
 #### 執行啟用
 
+   + 可透過以下QR Code 加入 LINE 機器人。
+   	
+        ![183xzqdi.png](https://github.com/molin-lin/Image/blob/main/183xzqdi.png "183xzqdi.png")
+
    + 如果開發過程中環頸經取得 ngrok token 並開啟終端機授權 `./ngrok authtoken[token]`，可直接下一步驟。
    + 建立 Chanel  `./ngrok http 5000` ，並取得URL (複製下來)
    + 透過Python 建立 Web Server (Port 必須跟  ngrok 一致)。 `python -m SimpleHTTPServer 5000`
