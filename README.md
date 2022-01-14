@@ -75,30 +75,40 @@
 	    + 若要確認鏡頭接線可正常運作，可透過指令 `raspistill -o image.png`  檢視照片內容確認鏡頭運作正常。
 
   	+ Web 網頁 (Flask)開發及測試
-  	    + 安裝 Flask (網站開方框架函式庫)
-  	    + 
+  	    + 安裝 Flask 基本套件(網站開方框架函式庫)
+  	    
+  	       `sudo pip3 install flask`
+	       
   	+ Ngrok 功能建置及單元測試
   	    + 安裝 [Ngrok](https://dashboard.ngrok.com/get-started/setup) ，讓樹莓派的網站可透過ngrok 提供的internel URL 進行存取。
   	    + 設定樹莓派環境
-  	       取得 authtoken `./ngrok authtoken [token]`
-	       啟動 http port (port 需要跟 Flask 的 port 一致)  `./ngrok http 5000`
+  	        + 取得 authtoken
+
+		`./ngrok authtoken [token]`
+		
+	        + 啟動 http port (port 需要跟 Flask 的 port 一致) 
+	        
+		`./ngrok http 5000`
 	       
-  	      
   	+ LINE Bot 功能
+  	    + 首先安裝 LINE Bot SDK
+  	    
+	       執行指令: `pip3 install line-bot-sdk`
+	       
+	    
+  	    + 想要透過 LNIE Bot跟樹莓派進行溝通，要先註冊LINE 官方帳號(目前免費)取得Provider，並建立Channel，才能開始設定並使用Message API。詳細步驟過程可參閱下一段的連結。
+  	    + 這過程中需要紀錄幾個資料，是之後程式開發過程中會需要使用到的，當然可以透過 [LINE Developers Console](https://developers.line.biz/zh-hant/docs/messaging-api/getting-started/) 進行設定與取得相關資料。
+                + Channel secret
+                + Chnnel access token
+                + 設定 Webhook URL，這項設定可從 ngrok 啟動後的畫面取得URL 後再來設定， 讓LINE platform 知道要連結到哪裡，並取得對應的response對應的response。
+
+
   + 有關 flask、ngrok、LINE Developers 相關安裝細節可參考如下連結內容進行。
   	+ 網站的架設(本實作是透過 [Flask](https://flask.palletsprojects.com/en/2.0.x/))。
   	+ 樹莓派能夠透通到internet([使用 ngrok 讓外網連接你的 API](https://ithelp.ithome.com.tw/articles/10197345))，提供URL 給外面(web/LINE)來連結使用。
   	+ LiNE 機器人(Bot) 的申請與設定可透過 [LINE Developers](https://developers.line.biz/zh-hant/docs/messaging-api/getting-started/)依步驟完成。
 
 
-*. Setup ngrok
-
-	a. 
-
-*. Setup environment
-	b. get authtoken
-	c. ./ngrok authtoken [token]
-	d. ./ngrok http 5000
 
 *安裝 LINE Bot SDK
   執行指令：`pip3 install line-bot-sdk`
