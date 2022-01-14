@@ -35,12 +35,12 @@
 
   | GIPO Pin number| Description      |GIPO Pin number| Description               |
   | ------------- | ----------------- |  ------------- | ------------------------- | 
-  | `3V3 power`   |   **DHT22 PWR**      | `(02)5V power `  | **7 Seg. Disp. PWR**  |
-  | `(01)GPIO 2`   | **LED (PIR)**       | `(04)5V power`   | NIL	 |
-  | `(03)GPIO 3`   | **DHT22 Data INPT** | `(06)GND `       | NIL        |
-  | `(05)GPIO 4`   | **PIR DATA INPT**   | `(08)GPIO 14`    | NIL        |
-  | `(07)GND `     | NIL    		 | `(10)GPIO 15 `   | NIL        |
-  | `(11)GPIO 17 ` | NIL		 | `(12)GPIO 18`    | **顯示器-A**|
+  | `(01)3V3 power`| **DHT22 PWR**       | `(02)5V power `  | **7 Seg. Disp. PWR**  |
+  | `(03)GPIO 2`   | **LED (PIR)**       | `(04)5V power`   | NIL	 |
+  | `(05)GPIO 3`   |                     | `(06)GND `       | NIL        |
+  | `(07)GPIO 4`   | **DHT22 Data INPT** | `(08)GPIO 14`    | NIL        |
+  | `(09)GND `     | NIL    		 | `(10)GPIO 15 `   | NIL        |
+  | `(11)GPIO 17 ` | **PIR DATA INPT** 	 | `(12)GPIO 18`    | **顯示器-A**|
   | `(13)GPIO 27 ` | NIL		 | `(14)GND`        | NIL  	 |
   | `(15)GPIO 22`  | NIL   		 | `(16)GPIO 23`    | **顯示器-B**|
   | `(17)3.3V`     | NIL  		 | `(18)GPIO 24`    | **顯示器-C**|
