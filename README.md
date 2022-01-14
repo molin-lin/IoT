@@ -72,29 +72,28 @@
   	+ 鏡頭模組功能及單元測試
   	    + 安裝 OpenCV
   	      執行指令: `pip install opencv-python`
-	    + 若要確認鏡頭接線可正常運作，可透過指令 `raspistill -o image.png` 透過照片確認鏡頭運作正常。
+	    + 若要確認鏡頭接線可正常運作，可透過指令 `raspistill -o image.png`  檢視照片內容確認鏡頭運作正常。
+
   	+ Web 網頁 (Flask)開發及測試
+  	    + 安裝 Flask (網站開方框架函式庫)
+  	    + 
   	+ Ngrok 功能建置及單元測試
+  	    + 安裝 [Ngrok](https://dashboard.ngrok.com/get-started/setup) ，讓樹莓派的網站可透過ngrok 提供的internel URL 進行存取。
+  	    + 設定樹莓派環境
+  	       取得 authtoken `./ngrok authtoken [token]`
+	       啟動 http port (port 需要跟 Flask 的 port 一致)  `./ngrok http 5000`
+	       
+  	      
   	+ LINE Bot 功能
   + 有關 flask、ngrok、LINE Developers 相關安裝細節可參考如下連結內容進行。
   	+ 網站的架設(本實作是透過 [Flask](https://flask.palletsprojects.com/en/2.0.x/))。
-  	+ 樹莓派能夠透通到internet(本實作是採用[ngrok](https://ithelp.ithome.com.tw/articles/10197345))，提供URL 給外面(web/LINE)來連結使用。
+  	+ 樹莓派能夠透通到internet([使用 ngrok 讓外網連接你的 API](https://ithelp.ithome.com.tw/articles/10197345))，提供URL 給外面(web/LINE)來連結使用。
   	+ LiNE 機器人(Bot) 的申請與設定可透過 [LINE Developers](https://developers.line.biz/zh-hant/docs/messaging-api/getting-started/)依步驟完成。
-
-
-*. 安裝 Flask (網站開方框架函式庫)
-
-*. setup camera for python 
-   執行指令: `pip install opencv-python`
-
-
-*. Create practice_app.py
-*. python3 practice_app.py  
 
 
 *. Setup ngrok
 
-	a. https://dashboard.ngrok.com/get-started/setup
+	a. 
 
 *. Setup environment
 	b. get authtoken
