@@ -35,7 +35,7 @@
 
   | GIPO Pin number| Description      |GIPO Pin number| Description               |
   | ------------- | ----------------- |  ------------- | ------------------------- | 
-  | `3V3 power`   |   **DHT22 PWR**      | `(02)5V power `  | **Used for 7 segments display**  |
+  | `3V3 power`   |   **DHT22 PWR**      | `(02)5V power `  | **7 Seg. Disp. PWR**  |
   | `(01)GPIO 2`   | **LED (PIR)**       | `(04)5V power`   | NIL	 |
   | `(03)GPIO 3`   | **DHT22 Data INPT** | `(06)GND `       | NIL        |
   | `(05)GPIO 4`   | **PIR DATA INPT**   | `(08)GPIO 14`    | NIL        |
