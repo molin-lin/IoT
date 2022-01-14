@@ -50,10 +50,10 @@
   | `(25)GND `     | NIL   		 | `(26)GPIO 7`     | NIL    	 |
   | `(27)GPIO 0`   | NIL		 | `(28)GPIO 1 `    | NIL   	 |
   | `(29)GPIO 5`   | NIL   		 | `(30)GND`        | NIL   	 |
-  | `(31)GPIO 6`   | NIL  		 | `(32)GPIO 12`    | **顯示器-G**|
+  | `(31)GPIO 6`   | NIL  		 | `(32)GPIO 12`    | **顯示器-E**|
   | `(33)GPIO 13`  | NIL		 | `(34)GND`        | NIL        |
   | `(35)GPIO 19`  | NIL 		 | `(36)GPIO 16`    | **顯示器-F**|
-  | `(37)GPIO 26`  | NIL  		 | `(38)GPIO 20`    | NIL 	 |
+  | `(37)GPIO 26`  | NIL  		 | `(38)GPIO 20`    | **顯示器-G**|
   | `(39)GND`      | **GND for ALL devices**  | `(40)GPIO 21`   | **LED**|
   
 
