@@ -26,6 +26,9 @@
 
 ### 系統架構如下圖，此實作前提是樹莓派已經完成基本環境設定，接下來要完成的主要步驟如下:
 
+![msg_flow.jpg](https://github.com/molin-lin/Image/blob/main/msg_flow.jpg "msg_flow.jpg")
+
+
 #### 終端硬體設備及電路
   + 電路圖如下。
   
