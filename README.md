@@ -70,9 +70,13 @@
 	  
 	      執行指令 `sudo pip3 install Adafruit_DHT`
   	+ 鏡頭模組功能及單元測試
-  	    + 在安裝鏡頭套件前，有幾個
+  	    + 在安裝鏡頭套件前，有幾個關鍵套件要install，不然程式會卡關。
+		- [x] `sudo apt-get install libatlas-base-dev` 
+		- [x] `sudo apt-get install libjasper-dev`
+		- [X] `sudo apt-get install libqtgui4`
+		- [X] `sudo apt-get install python3-pyqt5`
   	    + 安裝 OpenCV
-  	      執行指令: `pip install opencv-python`
+  	      執行指令: `pip3 install opencv-python`
 	    + 若要確認鏡頭接線可正常運作，可透過指令 `raspistill -o image.png`  檢視照片內容確認鏡頭運作正常。
 
   	+ Web 網頁 (Flask)開發及測試
@@ -122,6 +126,9 @@
    + 建立 Chanel  `./ngrok http 5000` ，並取得URL (複製下來)
    + 透過Python 建立 Web Server (Port 必須跟  ngrok 一致)。 `python -m SimpleHTTPServer 5000`
    + 啟動 Web 程式。 `python3 practice_app.py`   (本實作的web server入口程式為 practice_app.py)
+   + 將建立 ngrok channel 的 URL 在 LINE Developer->Message API->WebHook 中設定上去。(留意網頁LINE BOT call back 的路徑)
+   + 接著就可以開始居家管理。
+
 
 ## 成果示範(影片長度 8分59秒)
 
