@@ -31,7 +31,7 @@
   
 	![circuit.png](https://github.com/molin-lin/Image/blob/main/circuit.png "circuit.png")
   
-  + [GPIO.jpg](https://www.raspberrypi.com/documentation/computers/os.html)其各[針腳接線](https://pinout.xyz/)與相關感測模組對應如下。
+  + [GPIO](https://www.raspberrypi.com/documentation/computers/os.html)其各[針腳接線](https://pinout.xyz/)與相關感測模組對應如下。
 
   | GIPO Pin number| Description      |GIPO Pin number| Description               |
   | ------------- | ----------------- |  ------------- | ------------------------- | 
