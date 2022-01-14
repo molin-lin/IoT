@@ -17,7 +17,7 @@
    1. VNC viewer
 ## 建議及注意事項
 
-   1. 為確保系統Python程式除錯過程順利，會先完成電路接線，並透過簡易程式確認GPIO 各項接點控制led，方便確認能夠正常運作，才進行Python 程式撰寫。
+   1. 為確保系統Python程式除錯過程順利，會先完成電路接線，並透過簡易程式確認GPIO 各項接點控制 LED，方便確認能夠正常運作，才進行Python 程式撰寫。
    2. 實作過程中，為了測試除錯，在樹莓派上面插拔一堆線路接是件很不方便的事，購過40pins排線轉接到麵包版上的T-Cobbler 可以改善工作效率。
    3. 鏡頭及紅外線體感偵測器(PIR)怕靜電，接線過程中要確定完成去除靜電。
    4. PIR接線前要確認三根接腳哪支接腳是接地(GND)，可以把白色遮罩蓋拿起來確認。為了實作過程方便測試，可調整紅外線偵測器的靈敏度(SX)調高, 延遲時間(TX)調低。(順時針方向都是調高)
@@ -58,14 +58,21 @@
   
 
 #### 系統開發建置。
-  + 系統開發個人的習慣是從單一功能function開始,利用簡單的python程式進行電路控制測試，沒有問題後再整合一起。本實作分成如下幾個部分。
+  + 系統開發過程中，個人的習慣是從單一功能function開始,利用簡單的python程式進行電路控制測試，沒有問題後再一一整合。本實作分成如下幾個部分。
   	+ 紅外線PIR功能及單元測試
   	+ 溫溼度感測功能及單元測試
-            + 安裝python 套件
-              執行指令 `sudo pip3 install Adafruit_DHT`
+  	    + 安裝python 套件前，先確認系統已經更新。
+		- [x] `sudo apt-get update` 
+		- [x] `sudo apt-get install python3-pip`
+		- [X] `sudo apt-get install python3-dev python3-pip`
+		- [X] `sudo python3 -m pip install --upgrade pip setuptools wheel`
+	    + 再安裝 Adafruit_DHT
+	  
+	      執行指令 `sudo pip3 install Adafruit_DHT`
   	+ 鏡頭模組功能及單元測試
-  	    + 安裝python套件
+  	    + 安裝 OpenCV
   	      執行指令: `pip install opencv-python`
+	    + 若要確認鏡頭接線可正常運作，可透過指令 `raspistill -o image.png` 透過照片確認鏡頭運作正常。
   	+ Web 網頁 (Flask)開發及測試
   	+ Ngrok 功能建置及單元測試
   	+ LINE Bot 功能
