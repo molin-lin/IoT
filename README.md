@@ -70,6 +70,7 @@
 	  
 	      執行指令 `sudo pip3 install Adafruit_DHT`
   	+ 鏡頭模組功能及單元測試
+  	    + 在安裝鏡頭套件前，有幾個
   	    + 安裝 OpenCV
   	      執行指令: `pip install opencv-python`
 	    + 若要確認鏡頭接線可正常運作，可透過指令 `raspistill -o image.png`  檢視照片內容確認鏡頭運作正常。
@@ -146,4 +147,5 @@ alt="成果示範影片" width="240" height="180" border="10" /></a>
 [3]. [Python+LINE Bot教學 6步驟快速上手LINE Bot機器人](https://www.learncodewithmike.com/2020/06/python-line-bot.html "Python+LINE Bot教學 6步驟快速上手LINE Bot機器人") <br>
 [4]. [Messaging API 介紹](https://developers.line.biz/zh-hant/docs/messaging-api/overview/ "Messaging API 介紹") <br>
 [5]. [樹莓派連接DHT22偵測溫濕度](https://ithelp.ithome.com.tw/articles/10238029 "樹莓派連接DHT22偵測溫濕度")<br>
+[6]. [API-picamera.camera Module](https://github.com/amymcgovern/pyparrot/issues/34#issuecomment-379557137) <br>
 
