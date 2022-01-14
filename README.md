@@ -142,6 +142,12 @@ step5: run web_app in command mode,
 
 ## 成果示範
 
+1_ekMo24dV4
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=1_ekMo24dV4
+" target="_blank"><img src="http://img.youtube.com/vi/1_ekMo24dV4/0.jpg" 
+alt="成果示範影片" width="240" height="180" border="10" /></a>
+
 ## 改善方向與心得
 
 ## 參考資料
