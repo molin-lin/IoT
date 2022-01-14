@@ -66,15 +66,18 @@ def callback():
 # 回覆 LINE 的訊息
 @handler.add(MessageEvent, message=TextMessage)
 def reply_to_line(event):
-    reply_text = ''
+    reply_text = ""
     input_message = event.message.text
     dht_list =["溫度","濕度","天氣","dht"]
     pir_list =["偵測","紅外線","pir"]
+    pic_list =["照相","拍照","picture"]
     # functions control
     if any(name in input_message for name in dht_list):
-        reply_text += "" + str(control("dht"))
+        reply_text +=  str(control("dht"))
     elif any(name in input_message for name in pir_list):
-        reply_text += "" + str(control("pir"))
+        reply_text +=  str(control("pir"))
+    else:
+        reply_text += input_message + " function not ready."
 
     line_bot_api.reply_message(
         event.reply_token,

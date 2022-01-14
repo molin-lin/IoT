@@ -73,15 +73,15 @@ def control(x):
             display(11)
             ret_str = "on"  
         elif (str(nbr).lower()=="pir"): 
-            if chk(5):
-                ret_str = "感應有人" 
+            flag,datetime_str=chk(5)
+            if flag:
+                ret_str = "感應有人, 影像紀錄檔名 =  " + datetime_str
             else:
                 ret_str = "感應無人"
         elif (str(nbr).lower()=="dht"): 
             ret_str = "現在溫濕度 : " + str(dht_data())
             
         else: 
-            #display(11)                  #Err led
             ret_str=nbr
     
     #GPIO.cleanup()
