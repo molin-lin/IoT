@@ -1,4 +1,4 @@
-# 居家環境遠端管理 - 以樹莓派實作
+# 居家環境遠端管理 - 以樹莓派實作 (updated on 17/Jan/2022)
  
 ## 目的
    透過樹苺派及Python架構一個原型(prototype)，可以透過Internet(Web/LINE)取得終端設備(eg.鏡頭、感測裝置、電器)之數據或控制。
@@ -133,6 +133,7 @@
    + 啟動 Web 程式。 `python3 practice_app.py`   (本實作的web server入口程式為 practice_app.py)
    + 將建立 ngrok channel 的 URL 在 LINE Developer->Message API->WebHook 中設定上去。(留意網頁LINE BOT call back 的路徑)
    + 接著就可以開始居家管理。
+ 
 
 
 ## 成果示範(影片長度 8分59秒)
@@ -140,6 +141,11 @@
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=1_ekMo24dV4
 " target="_blank"><img src="http://img.youtube.com/vi/1_ekMo24dV4/0.jpg" 
 alt="成果示範影片" width="240" height="180" border="10" /></a>
+
+## 主要功能說明
+   + 可透過執行紅外線感測，若有感應到移動物體，則執行拍照(照片依日期時間為檔名儲存)。 (Web/LINE)
+   + 可遠端開啟攝影機。(Web)
+   + 可遠端取得溫溼度資料。(Web/LINE)
 
 ## 改善方向與心得
    ***本實作可改善方向:***
